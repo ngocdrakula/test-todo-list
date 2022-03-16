@@ -7,9 +7,7 @@ const initalState = {
 }
 
 const sortAndSaveLocal = (state) => {
-  console.log(state.data.map(i => i.dueDate));
   state.data.sort((a, b) => a.dueDate > b.dueDate ? 1 : -1)
-  console.log(state.data.map(i => i.dueDate));
   localStorage.setItem('store', JSON.stringify(state.data));
   return state
 }

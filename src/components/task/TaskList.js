@@ -23,7 +23,6 @@ class TaskList extends Component {
             }
         }
         catch (e) {
-            console.log('Co loi say ra:', e);
         }
     }
 
